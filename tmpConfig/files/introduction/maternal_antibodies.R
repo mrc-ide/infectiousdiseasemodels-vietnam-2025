@@ -9,9 +9,9 @@ initial(S)<-1-(M0+X0)
 initial(X) <- X0
 
 # parameter values
-M0<-user(.2) # initial proportion of the population with maternal antibodies
+M0<-user(1) # proportion of births with maternal antibodies
 X0 <- user(0)   
 lambda <- user(0.1) #FOI
-phi<-user(2) #rate of maternal antibody decay
+phi<-user(2) #rate of maternal antibody loss
 
 output(Total_seropos)<-1-S #overall proportion of the population that is seropositive
